@@ -1,4 +1,4 @@
-# Voice Recognition (Senior Design Project)\
+# Voice Recognition (Senior Design Project)
 
 Demo IFE Voice Recognition Website 
 
