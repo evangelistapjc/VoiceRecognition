@@ -1,0 +1,48 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>ICM Default Demo</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <script type="text/javascript">var VoiceVar = 0;</script>
+      <script type="text/javascript">var value = 0;</script>
+      <script src="https://unpkg.com/brain.js@1.0.0-rc.3/browser.js"></script>
+      <script type="text/javascript" src="NeuralNetwork.js"></script>
+      <link rel="stylesheet" href = "style.css">
+   </head>
+   <body>
+      <h1>Voice Recognition Device Home Page</h1>
+      <div class="Main_divide"></div>
+      <div class="Main">
+         <p class="list" id="range" style="display: none;"></p>
+         <div class="Chat_main">
+            <div class="Chat_header">
+               <h2>Welcome to IFE Chatbot!</h2>
+            </div>
+            <div class="Chat_messages">
+               <p id="Chat_messages_print"></p><br>
+            </div>
+            <div class="Chat_input">
+               <textarea type="text" id="message" placeholder="Begin by clicking on the voice and speaking out loud! Once you're done, hit submit." onkeydown= "if (event.keyCode == 13 && value != '' ) { javascript:response() } "></textarea>
+               <br><br>
+               <input type="button" value="Voice" id="voice_button" onclick="javascript:voice()"></input>
+               <!-- <input type="button" value="Submit" id="send" onclick="javascript:response();"></input> -->
+               <input type="button" value="Submit" id="send"></input>
+            </div>
+         <script src="IFE.js"></script>
+         </div>
+      </div>
+      <div class="Reinforcement">
+         <div class="Rein_header">
+            <h2>Reinforcement Area</h2>
+         </div>
+         <div class="button-container">
+            <textarea type="text"  class="correct" id="correct" placeholder="What would be a correct response?"></textarea>
+            <button class="button" id="submit-butt">Submit Correct Response.</button> <br>
+            <button class="button" id="no-butt">No, Bad Response.</button>
+            <button class="button" id="yes-butt">Yes, Good Answer.</button>
+         </div>
+      </div>
+   </body>
+</html>

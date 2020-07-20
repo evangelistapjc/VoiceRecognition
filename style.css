@@ -1,0 +1,146 @@
+.list {
+   margin: auto;
+   text-align: center;
+   font-size: 18px;
+}
+
+html, body {
+   padding: 0;
+   height: 100%;
+   margin: 0;
+}
+
+body {
+   background-color: rgba(63, 63, 63, 0.468); 
+   font-family: "Calibri", "Roboto", sans-serif;
+}
+
+h1 {
+   text-align: center;
+   padding: 20px 0px 0px 0px;
+   font-size: 50px;
+}
+
+.Main_divide {
+   border-top: 2px solid black;
+   margin: -10px 50px 0px 50px;
+   padding-bottom: 50px;
+}
+
+.Main {
+   display: inline-block;
+}
+
+.Main > .Chat_main {
+   background-color: beige;
+   float: left;
+   margin-left: 70%;
+   position: relative;
+   height: fit-content;
+   border: 4px solid #000000;
+   max-height: 800px;
+   width: 500px;
+   border-radius: 15px;
+}
+
+.Chat_main > .Chat_header {
+   background-color: rgba(54, 90, 128, 0.568);
+   position: relative;
+   text-align: center;
+   border-bottom: 4px solid #000000;
+   padding-top: 1px;
+   width: 100%;
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+   font-size: 20px;
+}
+
+.Chat_main > .Chat_header h2 {
+   font-weight: bolder;
+   font-size: 30px;
+}
+
+.Chat_main > .Chat_messages {
+   border-bottom: 4px solid #000000;
+   overflow-y: auto;
+   position: relative;
+   height: 500px;
+   padding: 0px 0px 0px 10px;
+   font-size: 18px;
+   line-height: 25px;
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+
+.Chat_main > .Chat_input {
+   text-align: center;
+   word-wrap: break-word;
+   width: 100%;
+   height: 100%;
+   border-bottom-left-radius: 12px;
+   border-bottom-right-radius: 12px;
+   padding: 15px 0px 15px 0px;
+}
+
+#message {
+   width: 490px;
+   font-size: 15px;
+}
+
+.Reinforcement {
+   background-color: beige;
+   float: right;
+   position: relative;
+   text-align: center;
+   border: 4px solid #000000;
+   margin: 200px 10% 0px 0px;
+   width: 500px;
+   border-radius: 15px;
+}
+
+.Reinforcement > .Rein_header {
+   background-color: rgba(54, 90, 128, 0.568);
+   border-bottom: 4px solid #000000;
+   padding-top: 1px;
+   /* display: ; */
+}
+
+.Reinforcement > .Rein_header h2 {
+   font-weight: bolder;
+   font-size: 30px;
+}
+
+.button {
+   width: 150px;
+   height: 50px;
+   border-radius: 50px;
+   font-size: 15px;
+}
+
+.button-container {
+   padding: 10px 0px 10px 0px;
+}
+
+.correct {
+   float: top;
+   width: 400px;
+   word-wrap: break-word;
+   margin-bottom: 20px;
+   display: none;
+}
+
+#submit-butt {
+   background-color: rgba(68, 66, 156, 0.8);
+   margin-bottom: 10px;
+   display: none;
+}
+
+#no-butt {
+   background-color: rgba(255, 0, 0, 0.80);
+   display: none;
+}
+
+#yes-butt {
+   background-color: rgba(0, 128, 0, 0.80);
+   display: none;
+}
